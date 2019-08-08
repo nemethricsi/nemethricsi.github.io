@@ -1,3 +1,4 @@
+//database
 const pictures = [
   {
     alt: 'apple',
@@ -31,13 +32,20 @@ const pictures = [
   }
 ];
 
+// loading in the thumbnail pictures
 let thumbnails = document.querySelectorAll('.thumbnail');
-
 for (let i = 0; i < thumbnails.length; i++) {
   thumbnails[i].style.backgroundImage = `url("/assets/images/${i}_thumbnail.jpg")`;
   thumbnails[i].onclick = () => { mainImage.style.backgroundImage = `url("/assets/images/${i}.jpg")`; }
 }
 
+//init the main image
 let mainImage = document.querySelector('.main-image');
-
 mainImage.style.backgroundImage = 'url("/assets/images/0.jpg")';
+
+document.querySelector('.prev').onclick = () => {
+  //go to PREVIOUS picture and thumbnail
+}
+document.querySelector('.next').onclick = () => {
+  //go to NEXT picture and thumbnail
+}
