@@ -95,6 +95,10 @@ body {
   line-height: 1.7;
 }
 
+/**********************/
+/***   THUMBNAILS   ***/
+/**********************/
+
 .thumbnail-container {
   display: flex;
   flex-direction: row;

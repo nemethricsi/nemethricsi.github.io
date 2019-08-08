@@ -38,11 +38,12 @@ const pictures = [
   }
 ];
 
-// loading in the thumbnail pictures
+// loading in the thumbnail pictures & textbox
 let thumbnails = document.querySelectorAll('.thumbnail');
 for (let i = 0; i < thumbnails.length; i++) {
   thumbnails[i].style.backgroundImage = `url("/assets/images/${i}_thumbnail.jpg")`;
-  thumbnails[i].onclick = () => {
+  //thumbnails[i].style.backgroundImage = `url(pictures${i}.thumbnail)`; WHY NOT ??
+  thumbnails[i].onclick = function () {
     mainImage.style.backgroundImage = `url("/assets/images/${i}.jpg")`;
     title.textContent = pictures[i].alt;
     text.textContent = pictures[i].text;
@@ -59,6 +60,8 @@ mainImage.style.backgroundImage = 'url("/assets/images/0.jpg")';
 
 document.querySelector('.prev').onclick = () => {
   //go to PREVIOUS picture and thumbnail
+  //let currentImage = document.querySelector('.main-image');
+
 }
 document.querySelector('.next').onclick = () => {
   //go to NEXT picture and thumbnail
