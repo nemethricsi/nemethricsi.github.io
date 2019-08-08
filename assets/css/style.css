@@ -9,11 +9,13 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-weight: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /**********************/
@@ -46,7 +48,6 @@ body {
 .container-slider {
   width: 100%;
   height: 432px;
-  background-color: rgba(81, 18, 94, 0.61);
   display: flex;
   flex-direction: row;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -63,9 +64,35 @@ body {
   background-color: #e4e4e4;
 }
 
+.arrow:active{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(.5px);
+}
+
 .main-image {
   flex-basis: 80%;
   background-size: cover;
+  position: relative;
+}
+
+.textbox{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+  padding: 15px;
+}
+
+.textbox h1 {
+  font-size: 160%;
+  text-transform: capitalize;
+}
+
+.textbox p {
+  line-height: 1.7;
 }
 
 .thumbnail-container {
@@ -87,8 +114,15 @@ body {
   box-shadow: 0 10px 6px -6px #777;
 }
 
+.thumbnail:hover {
+  transform: translateY(-1px);
+  /* transform: scale(1.15); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;  
+}
+
 .thumbnail:active{
-  -webkit-box-shadow: 0 10px 2px -6px #777;
-  -moz-box-shadow: 0 10px 2px -6px #777;
-  box-shadow: 0 10px 2px -6px #777;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+  transition: all 0.05s;
 }
