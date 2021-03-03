@@ -6566,7 +6566,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function AddToSnipCart({product}){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",{type:"button",class:"snipcart-add-item","data-item-id":product.slug,"data-item-price":product.price,"data-item-url":`${__dirname}/product/${product.slug}`,"data-item-name":product.name,"data-item-image":product.images[0].src},"Add to SnipCart ",product.price," HUF"));}
+function AddToSnipCart({product}){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",{type:"button",class:"snipcart-add-item","data-item-id":product.slug,"data-item-price":product.price,"data-item-url":`https://nemethricsi.github.io/product/${product.slug}`,"data-item-name":product.name,"data-item-image":product.images[0].src},"Add to SnipCart ",product.price," HUF"));}
 
 /***/ }),
 
@@ -29793,7 +29793,7 @@ function symbolObservablePonyfill(root) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"polyfill":["/polyfill-1810497eca34e8de73f1.js"],"app":["/app-835ed618a7cb1af53ecd.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7f5465575c50171abbdc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-374b0342cb479fbcde70.js"],"component---src-templates-category-js":["/component---src-templates-category-js-efc04fe337493b16e8bd.js"],"component---src-templates-product-js":["/component---src-templates-product-js-c8239e172fe971b19755.js"]}');
+module.exports = JSON.parse('{"polyfill":["/polyfill-1810497eca34e8de73f1.js"],"app":["/app-835ed618a7cb1af53ecd.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7f5465575c50171abbdc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-953cf927a5ad89bc2746.js"],"component---src-templates-category-js":["/component---src-templates-category-js-efc04fe337493b16e8bd.js"],"component---src-templates-product-js":["/component---src-templates-product-js-7811561482d9724fc6b8.js"]}');
 
 /***/ }),
 
